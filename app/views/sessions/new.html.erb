@@ -1,0 +1,29 @@
+<div class="jumbotron">
+  <h1>User Login</h1>
+  <h4>New user? Click Register below.</h4>
+  <p><a class="btn btn-primary btn-lg" href="/signup" role="button">Register</a></p>
+  
+</div>
+
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-1">
+
+    <%= form_tag '/login' do %>
+
+      <div class="form-group">
+        <h4>Email</h4>
+        <%= email_field_tag :email %>
+      <div>
+
+      <div class="form-group">
+        <h4>Password</h4>
+        <%= password_field_tag :password %>
+      <div>
+
+      <br>  
+      <%= submit_tag "Login" %>
+      
+    <% end %>
+
+  </div>
+</div>

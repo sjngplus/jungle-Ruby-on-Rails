@@ -26,7 +26,7 @@
           </ul>
         </li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right">        
         <li>
           <%= link_to "about" do %>
             <%= fa_icon "info" %> About us
@@ -49,6 +49,24 @@
             <%= fa_icon "shopping-cart" %> My Cart (<%= cart.size %>)
           <% end %>
         </li>
+
+        <% if current_user %>
+          <li>
+            <h5 style="padding-top: 0.6em;"> Welcome <%= current_user.first_name %> </h5>
+          </li>
+          <li>
+            <%= link_to "/logout" do %>
+              <%= fa_icon "user" %> Logout
+            <% end %>
+          </li>
+        <% else %> 
+          <li>
+            <%= link_to "/login" do %>
+              <%= fa_icon "user" %> Login
+            <% end %>
+          </li>
+        <% end %>         
+        
       </ul>
     </div>
   </div>
