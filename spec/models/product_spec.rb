@@ -12,7 +12,7 @@ RSpec.describe Product, type: :model do
         quantity: 5,
         price: 99.00        
       })      
-      expect(Product.all.first.name).to eq("Test Product")
+      expect(Product.all.first).to have_attributes(name: 'Test Product', description: "Test product description goes here", quantity: 5, price: 99.00)
     end
 
     it 'Throws an error if no name is entered' do
