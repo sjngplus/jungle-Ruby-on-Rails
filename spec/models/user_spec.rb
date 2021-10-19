@@ -48,8 +48,6 @@ RSpec.describe User, type: :model do
   end
 
 
-
-
   describe '.authenticate_with_credentials' do
 
     it 'Return the user object if credentials are authenticated' do

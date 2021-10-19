@@ -3,7 +3,7 @@ require 'pp'
 class UsersController < ApplicationController
 
   def new
-    # pp User.all      
+    pp User.all      
   end
 
   def create   
