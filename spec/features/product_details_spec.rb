@@ -24,7 +24,7 @@ RSpec.feature "Visitor goes to the product details page", type: :feature, js: tr
     visit root_path
     # visit '/products/1'
     find('.products article:first-child a.btn-default').click
-    # puts page.html
+    puts page.html
 
     # DEBUG / VERIFY
     # save_screenshot
