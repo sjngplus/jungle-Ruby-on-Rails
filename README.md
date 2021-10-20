@@ -3,6 +3,7 @@
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example. Base app was already built for educational purposes.
 
 ## Features added showcase:
+![App preview gif](https://raw.githubusercontent.com/sjngplus/jungle-Ruby-on-Rails/master/docs/App%20preview.gif)
 
 ## Features added
 * Display a sold out badge when product stock is zero
